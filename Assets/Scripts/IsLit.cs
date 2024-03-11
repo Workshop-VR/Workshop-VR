@@ -11,7 +11,7 @@ public class IsLit : MonoBehaviour
 
     void Start()
     {
-        heatCollider = GetComponent<Collider>();                    // /!\ doit etre le premie collider du gameobject
+        heatCollider = GetComponent<Collider>();                    // /!\ doit etre le premier collider du gameobject
 
 
         // Check si l'object est allumé au départ
