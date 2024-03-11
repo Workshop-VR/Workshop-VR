@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9965e252474e7ac40bb785435d8aa81f, type: 2}
+  - {fileID: 2100000, guid: 6691c89fc6fbbb44cb5af52391da7129, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1685783404741825015}
   - component: {fileID: 7440985934933089843}
   - component: {fileID: 852945621478258629}
+  - component: {fileID: 6475711578505800473}
   m_Layer: 3
   m_Name: Candle
   m_TagString: Untagged
@@ -236,10 +237,25 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6475711578505800473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630414799010713688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21e5772aad714846b3aa083fd1abcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLit: 0
+  lightable: {fileID: 905896832785539271}
+  m_light: {fileID: 2100000, guid: 9965e252474e7ac40bb785435d8aa81f, type: 2}
 --- !u!1 &3227774662421513586
 GameObject:
   m_ObjectHideFlags: 0
