@@ -24,6 +24,16 @@ public class Click : MonoBehaviour
 		StartCoroutine(ChangeColor());
 	}
 
+	public void OnSelected()
+	{
+		mat.color = Color.yellow;
+	}
+
+	public void OnDeselected()
+	{
+		mat.color = Color.red;
+	}
+
 	IEnumerator ChangeColor()
 	{
 		mat.color = Color.yellow;
