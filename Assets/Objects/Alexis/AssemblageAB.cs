@@ -19,9 +19,11 @@ public class Alexis : MonoBehaviour
     private Vector3 positionA;
     private Quaternion rotationA;
     private bool Assemblable;
+    private Collider colliderB;
 
     void Start()
     {
+        colliderB = B.GetComponent<Collider>();
         positionB = BTransform.position;
         rotationB = BTransform.rotation;
         rendererB = B.GetComponent<Renderer>();
@@ -31,22 +33,20 @@ public class Alexis : MonoBehaviour
         positionA = transform.position;
         rotationA = transform.rotation;
         Assemblable = false;
-
 }
-
-
     void Update()
     {
         //A
-        Vector3 positionA = transform.position;
-        Quaternion rotationA = transform.rotation;
+        Vector3 positionB = transform.position;
+        Quaternion rotationB = transform.rotation;
 
 
-        float distance = Vector3.Distance(positionA, positionB);
+        float distance = Vector3.Distance(positionA + new Vector3 (-1,0,0), positionB);
         if (distance > 2)
         {
             rendererBpre.enabled = false;
             rendererB.enabled = true;
+            colliderB.enabled = true;
         }
         
         if (distance <= 2)
@@ -55,6 +55,7 @@ public class Alexis : MonoBehaviour
             rendererB.enabled = false;
             MiseEnPosition(positionA, positionBpre, rotationA, rotationBpre);
             Assemblable = true;
+            colliderB.enabled = false;
         }
 
         if (Assemblable == true && Input.GetMouseButtonDown(0))
