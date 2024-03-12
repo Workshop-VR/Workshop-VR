@@ -31,7 +31,6 @@ public class FlipNormal : MonoBehaviour
                 }
                 mesh.SetTriangles(tris, i);
             }
-            Debug.Log("nope");
         }
     }
 }
