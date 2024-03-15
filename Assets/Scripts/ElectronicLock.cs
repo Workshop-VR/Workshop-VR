@@ -13,6 +13,7 @@ public class ElectronicLock : MonoBehaviour
 	[SerializeField] private Material red;
 	[SerializeField] private Material green;
 	[SerializeField] private TextMeshPro idText;
+	[SerializeField] private Transform idTransform;
 	private bool isActive = false;
 	private Camera cam;
 
@@ -52,8 +53,6 @@ public class ElectronicLock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		idText.transform.LookAt(cam.transform, Vector3.down);
-		//idText.transform.localEulerAngles += new Vector3(0, 180, 0);
-
+		idTransform.LookAt(cam.transform, Vector3.up);
 	}
 }
