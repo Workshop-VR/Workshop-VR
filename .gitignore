@@ -71,3 +71,13 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Assets/XR/Settings/Open XR Package Settings.asset
+ProjectSettings/Packages/com.unity.learn.iet-framework/Settings.json
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/ShaderGraphSettings.asset
+Packages/manifest.json
+Packages/manifest.json
+Packages/packages-lock.json
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
