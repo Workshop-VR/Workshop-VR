@@ -1,26 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ElectronicLock : MonoBehaviour
 {
-	[SerializeField] private int ID;
+	[SerializeField] private uint ID;
+	[SerializeField] private Door door;
 	[SerializeField] private Renderer led;
 	[SerializeField] private Material def;
 	[SerializeField] private Material red;
 	[SerializeField] private Material green;
+	[SerializeField] private TextMeshPro idText;
 	private bool isActive = false;
+	private Camera cam;
 
 	private void OnTriggerEnter(Collider other)
 	{
 		ElectronicKey key = other.GetComponent<ElectronicKey>();
 		if (key != null)
 		{
-			int keyID = key.GetKeyID();
+			uint keyID = key.GetKeyID();
 			Debug.Log("ID : " + keyID);
 			isActive = (ID == keyID);
 			led.material = isActive ? green : red;
+			if (isActive && door != null)
+			{
+				door.OpenDoor();
+			}
 		}
 	}
 
@@ -32,12 +40,20 @@ public class ElectronicLock : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-        
-    }
+		cam = Camera.main;
+		idText.text = "ID #";
+		if (ID < 10)
+		{
+			idText.text += "0";
+		}
+		idText.text += "" + ID;
+	}
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+		idText.transform.LookAt(cam.transform, Vector3.down);
+		//idText.transform.localEulerAngles += new Vector3(0, 180, 0);
+
+	}
 }
