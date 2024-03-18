@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4472971585337326082}
   - component: {fileID: 7535898332945022833}
   - component: {fileID: 5826492756484918817}
+  - component: {fileID: 2602849449565712782}
   m_Layer: 0
   m_Name: Bucketblue
   m_TagString: Untagged
@@ -264,3 +265,25 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &2602849449565712782
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6890681657972529157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: 58e2a03b48c235e49a6d57aff30acaa1, type: 3}
