@@ -314,22 +314,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor
-    erat lectus, vel egestas lacus luctus vel. Vestibulum nisi nisl, scelerisque
-    sed tellus non, porta congue elit. Nunc vitae molestie nisl, et dapibus enim.
-    Nulla lobortis gravida libero, sed pharetra justo iaculis vulputate. Suspendisse
-    nec orci in enim interdum vulputate vitae sed nisi. Vestibulum et consectetur
-    leo. Vivamus volutpat auctor erat ut venenatis. Nullam viverra molestie leo.
-    Mauris nec vulputate dolor.
-
-    Proin interdum elit nec justo ultricies porttitor.
-    Aliquam auctor odio eget mattis tincidunt. Nulla ut luctus turpis, quis tincidunt
-    odio. Nam mollis arcu in pharetra sollicitudin. Sed at magna euismod justo tempor
-    ullamcorper. Fusce in est tempus, tempor sem a, maximus dolor. Fusce sit amet
-    sollicitudin metus, vitae interdum erat. Vestibulum tristique, risus a tempor
-    luctus, magna eros viverra purus, nec molestie odio ex et justo. Nulla sem ligula,
-    ultricies ac pretium vitae, laoreet et nulla. Fusce ultricies elit vestibulum
-    eros condimentum, eu faucibus felis egestas.'
+  m_text: "Je ne sais pas ce qu'il s'est pass\xE9 hier soir... C'\xE9tait \xE9trange,
+    je n'\xE9tais plus moi m\xEAme... Je me suis transform\xE9 en une b\xEAte  humanoide,
+    une sorte de loup-garou. Cela m'a sembl\xE9 durer toute la nuit et au petit matin
+    je suis redevenu humain, redevenu normal... Enfin normal.. J'ai des os f\xE9ll\xE9s
+    je pense, peut \xEAtre m\xEAme bris\xE9. Je souffre le martyr depuis quelques
+    heures d\xE9j\xE0, comme si cette foutu transformation avait bris\xE9 mon corps,
+    je pense que je n'en ai plus pour long___"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -605,22 +596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor
-    erat lectus, vel egestas lacus luctus vel. Vestibulum nisi nisl, scelerisque
-    sed tellus non, porta congue elit. Nunc vitae molestie nisl, et dapibus enim.
-    Nulla lobortis gravida libero, sed pharetra justo iaculis vulputate. Suspendisse
-    nec orci in enim interdum vulputate vitae sed nisi. Vestibulum et consectetur
-    leo. Vivamus volutpat auctor erat ut venenatis. Nullam viverra molestie leo.
-    Mauris nec vulputate dolor.
-
-    Proin interdum elit nec justo ultricies porttitor.
-    Aliquam auctor odio eget mattis tincidunt. Nulla ut luctus turpis, quis tincidunt
-    odio. Nam mollis arcu in pharetra sollicitudin. Sed at magna euismod justo tempor
-    ullamcorper. Fusce in est tempus, tempor sem a, maximus dolor. Fusce sit amet
-    sollicitudin metus, vitae interdum erat. Vestibulum tristique, risus a tempor
-    luctus, magna eros viverra purus, nec molestie odio ex et justo. Nulla sem ligula,
-    ultricies ac pretium vitae, laoreet et nulla. Fusce ultricies elit vestibulum
-    eros condimentum, eu faucibus felis egestas.'
+  m_text: "Jour 29 : \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
