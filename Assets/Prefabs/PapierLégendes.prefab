@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1233748348109132764}
   - component: {fileID: 3548653269035996875}
   m_Layer: 0
-  m_Name: Paper
+  m_Name: "PapierL\xE9gendes"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,13 +314,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Je ne sais pas ce qu'il s'est pass\xE9 hier soir... C'\xE9tait \xE9trange,
-    je n'\xE9tais plus moi m\xEAme... Je me suis transform\xE9 en une b\xEAte  humanoide,
-    une sorte de loup-garou. Cela m'a sembl\xE9 durer toute la nuit et au petit matin
-    je suis redevenu humain, redevenu normal... Enfin normal.. J'ai des os f\xE9ll\xE9s
-    je pense, peut \xEAtre m\xEAme bris\xE9. Je souffre le martyr depuis quelques
-    heures d\xE9j\xE0, comme si cette foutu transformation avait bris\xE9 mon corps,
-    je pense que je n'en ai plus pour long___"
+  m_text: "Giraud de Barri rapporte par exemple la m\xE9saventure d'un pr\xEAtre
+    et d'un gar\xE7on qui se rende dans le comt\xE9 de Meath. Pendant la nuit, ils
+    firent halte dans une for\xEAt inconnue et allum\xE8rent un feu sous un arbre
+    quand surgit un loup qui d\xE9clara d'une voix humaine \xAB Ne vous alarmez pas,
+    n'ayez nulle crainte \xBB. Une mal\xE9diction frappait ce royaume tous les sept
+    ans et un couple de villageois se trouvait chang\xE9 en loup. S'ils survivent
+    pendant les sept ans, ils retrouvent leur forme humaine et rentrent chez eux,
+    un autre couple est alors maudit \xE0 leur place.\r\n\r\nCe m\xEAme historien
+    rencontra vers 1182 des loups-garous irlandais qui se m\xE9tamorphosent durant
+    la f\xEAte de Yule (correspondant plus ou moins \xE0 No\xEBl). Ils \xE9taient
+    natifs d'Ossory, et avaient \xE9t\xE9 maudits par St. Natalis en punition de
+    leur m\xE9chancet\xE9.      "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -596,7 +601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jour 29 : \n"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
