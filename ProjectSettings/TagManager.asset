@@ -7,6 +7,10 @@ TagManager:
   - Anchor
   - Basketball
   - TagGoesHere
+  - Croc
+  - Photo
+  - Loup
+  - Temoignage
   layers:
   - Default
   - TransparentFX
