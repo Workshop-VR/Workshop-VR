@@ -17,7 +17,7 @@ public class BasketGoal : MonoBehaviour
 	{
 		if (hasEntered1 && bd2.GetHasEntered())
 		{
-			Debug.Log("Point !");
+			//Debug.Log("Point !");
 			hasEntered1 = false;
 			points++;
 			pointText.text = "" + points;
