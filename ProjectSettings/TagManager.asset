@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Anchor
+  - Basketball
+  - TagGoesHere
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - Water
   - UI
   - CanLightUp
-  - 
+  - Briquet
   - 
   - 
   - 

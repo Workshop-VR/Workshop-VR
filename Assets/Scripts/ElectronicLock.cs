@@ -23,7 +23,7 @@ public class ElectronicLock : MonoBehaviour
 		if (key != null)
 		{
 			uint keyID = key.GetKeyID();
-			Debug.Log("ID : " + keyID);
+			//Debug.Log("ID : " + keyID);
 			isActive = (ID == keyID);
 			led.material = isActive ? green : red;
 			if (isActive && door != null)
