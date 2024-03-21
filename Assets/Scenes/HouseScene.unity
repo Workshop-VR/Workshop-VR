@@ -21182,6 +21182,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders:
   - {fileID: 387618003}
+  - {fileID: 4296982704677378854}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -48772,10 +48773,6 @@ PrefabInstance:
     - target: {fileID: 1984668760711245992, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999487018415155954, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
-      propertyPath: m_CameraYOffset
-      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4592956391713993908, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_Name
@@ -101636,6 +101633,11 @@ PrefabInstance:
 --- !u!4 &4296982704677378853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 993545755453727231, guid: 5d6d234d21fc10c4fa514b77f8aae1c6, type: 3}
+  m_PrefabInstance: {fileID: 4296982704677378852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4296982704677378854 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 444364545533108924, guid: 5d6d234d21fc10c4fa514b77f8aae1c6, type: 3}
   m_PrefabInstance: {fileID: 4296982704677378852}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4397915201105401401
