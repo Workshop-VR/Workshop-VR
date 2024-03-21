@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DynamicLightSource : MonoBehaviour
 {
-	[SerializeField] private bool isLit = false;
 	[SerializeField] private GameObject lightSource;
 
 
@@ -13,7 +12,6 @@ public class DynamicLightSource : MonoBehaviour
 	{
 		if (other.gameObject.layer == 6)
 		{
-			isLit = true;
 			lightSource.SetActive(true);
 		}
 	}

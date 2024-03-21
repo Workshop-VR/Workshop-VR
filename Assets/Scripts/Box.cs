@@ -7,6 +7,9 @@ public class Box : MonoBehaviour
 	[SerializeField] private Transform pivot;
 	[SerializeField] private float time = 0.5f;
 	[SerializeField] private string objectTag;
+	private bool state = false;
+
+	private EndManager endManager;
 
 	private float defaultAngle = -70;
 
@@ -14,8 +17,21 @@ public class Box : MonoBehaviour
 	{
 		if (other.gameObject.tag == objectTag)
 		{
+			Debug.Log("Object : " + other.gameObject.name);
 			StartCoroutine(CloseBox());
+			state = true;
+			endManager.Check();
 		}	
+	}
+
+	public void SetEndManager(EndManager t)
+	{
+		endManager = t;
+	}
+
+	public bool GetState()
+	{
+		return (state);
 	}
 
 	// Start is called before the first frame update
