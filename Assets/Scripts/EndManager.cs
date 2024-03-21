@@ -18,7 +18,7 @@ public class EndManager : MonoBehaviour
 		{
 			obj.SetActive(true);
 		}
-		Debug.Log("GG !");
+        Debug.Log("GG !");
 		return (true);
 	}
 
