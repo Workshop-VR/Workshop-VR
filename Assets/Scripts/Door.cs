@@ -7,11 +7,12 @@ public class Door : MonoBehaviour
 	[SerializeField] private float time = 0.5f;
 	[SerializeField] private bool reversed = false;
 	private bool open = false;
+	private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class Door : MonoBehaviour
 		if (!open)
 		{
 			StartCoroutine(Open());
+			audioSource.Play();
 		}
 		open = true;
 	}

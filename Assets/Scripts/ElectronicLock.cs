@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class ElectronicLock : MonoBehaviour
 {
 	[SerializeField] private uint ID;
+	[SerializeField] private AudioClip audioYes;
+	[SerializeField] private AudioClip audioNo;
 	[SerializeField] private Door door;
 	[SerializeField] private Renderer led;
 	[SerializeField] private Material def;
@@ -14,6 +16,7 @@ public class ElectronicLock : MonoBehaviour
 	[SerializeField] private Material green;
 	[SerializeField] private TextMeshPro idText;
 	[SerializeField] private Transform idTransform;
+	private AudioSource audioSource;
 	private bool isActive = false;
 	private Camera cam;
 
@@ -26,6 +29,8 @@ public class ElectronicLock : MonoBehaviour
 			//Debug.Log("ID : " + keyID);
 			isActive = (ID == keyID);
 			led.material = isActive ? green : red;
+			audioSource.clip = isActive ? audioYes : audioNo;
+			audioSource.Play();
 			if (isActive && door != null)
 			{
 				door.OpenDoor();
@@ -42,6 +47,7 @@ public class ElectronicLock : MonoBehaviour
 	void Start()
     {
 		cam = Camera.main;
+		audioSource = GetComponent<AudioSource>();
 		idText.text = "ID #";
 		if (ID < 10)
 		{
