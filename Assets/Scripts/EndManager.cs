@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndManager : MonoBehaviour
 {
 	[SerializeField] private Box[] boxes;
-	[SerializeField] private GameObject[] objectsToActivate;
+	[SerializeField] private string sceneToLoad;
 
 	public bool Check()
 	{
@@ -14,12 +15,14 @@ public class EndManager : MonoBehaviour
 			if (!box.GetState())
 				return (false);
 		}
-		foreach (GameObject obj in objectsToActivate)
-		{
-			obj.SetActive(true);
-		}
-        Debug.Log("GG !");
+		Validate();
 		return (true);
+	}
+
+	private void Validate()
+	{
+		Debug.Log("GG !");
+		SceneManager.LoadScene(sceneToLoad);
 	}
 
     // Start is called before the first frame update
